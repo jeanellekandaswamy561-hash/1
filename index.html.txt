@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王心凌 | Industrial Designer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+WANG XINLING
+</div>
+
+<ul>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay"></div>
+
+<img src="images/hero.jpg" alt="hero">
+
+<div class="hero-content">
+
+<h1>
+Industrial Design Portfolio
+</h1>
+
+<p>
+Designing meaningful experiences through products, technology and humanity.
+</p>
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+</div>
+
+</section>
+
+<section id="projects" class="projects">
+
+<h2>Selected Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="images/gaitsense.jpg">
+
+<div class="card-content">
+
+<h3>GAITSENSE</h3>
+
+<p>
+AI Gait Monitoring System for Elderly Fall Prevention
+</p>
+
+<button onclick="openModal('modal1')">
+View Project
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/printer.jpg">
+
+<div class="card-content">
+
+<h3>Wall-mounted Memo Printer</h3>
+
+<p>
+Smart note printer for elderly users
+</p>
+
+<button onclick="openModal('modal2')">
+View Project
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/drone.jpg">
+
+<div class="card-content">
+
+<h3>Rural Delivery Drone</h3>
+
+<p>
+Low-cost drone for mountainous areas
+</p>
+
+<button onclick="openModal('modal3')">
+View Project
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>About Me</h2>
+
+<p>
+Industrial Design student passionate about healthcare products,
+smart devices and human-centered innovation.
+
+Ranked top of the major for two consecutive years and awarded
+Provincial Government Scholarship.
+</p>
+
+</section>
+
+<section class="video-section">
+
+<h2>Project Video</h2>
+
+<video controls>
+
+<source src="videos/gaitsense.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email</p>
+
+<p>
+2240195301@qq.com
+</p>
+
+<p>
+杭州 · 中国
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Wang Xinling Portfolio
+
+</footer>
+
+<div id="modal1" class="modal">
+
+<div class="modal-content">
+
+<span onclick="closeModal('modal1')" class="close">&times;</span>
+
+<h2>GAITSENSE</h2>
+
+<p>
+A wearable AI-powered gait analysis device designed for elderly users.
+</p>
+
+<img src="images/gaitsense.jpg">
+
+</div>
+
+</div>
+
+<div id="modal2" class="modal">
+
+<div class="modal-content">
+
+<span onclick="closeModal('modal2')" class="close">&times;</span>
+
+<h2>Wall-mounted Memo Printer</h2>
+
+<p>
+Helping seniors record information effortlessly.
+</p>
+
+<img src="images/printer.jpg">
+
+</div>
+
+</div>
+
+<div id="modal3" class="modal">
+
+<div class="modal-content">
+
+<span onclick="closeModal('modal3')" class="close">&times;</span>
+
+<h2>Rural Delivery Drone</h2>
+
+<p>
+Affordable logistics solution for remote villages.
+</p>
+
+<img src="images/drone.jpg">
+
+</div>
+
+</div>
+
+<script>
+
+function openModal(id){
+document.getElementById(id).style.display="flex";
+}
+
+function closeModal(id){
+document.getElementById(id).style.display="none";
+}
+
+</script>
+
+</body>
+</html>
